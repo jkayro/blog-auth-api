@@ -9,8 +9,8 @@ Projeto Rails API com autenticação para ser usado com frontend SPA
 
 ## Instalação
 
-$ git clone https://github.com/jkayro/rails-blog-api.git
+`$ git clone https://github.com/jkayro/blog-auth-api.git`
 
-$ cd rails-blog-api
+`$ cd rails-blog-api`
 
-$ bundler install
+`$ bundler install`

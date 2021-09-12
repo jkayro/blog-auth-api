@@ -113,7 +113,7 @@ Rails.application.configure do
 
   # Email
   config.action_mailer.default_url_options = {
-    host: 'https://eloquent-austin-a87d15.netlify.app'
+    host: 'auth-api-blog.herokuapp.com'
   }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {

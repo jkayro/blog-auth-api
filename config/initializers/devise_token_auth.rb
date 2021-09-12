@@ -56,17 +56,17 @@ DeviseTokenAuth.setup do |config|
   # By default DeviseTokenAuth will not send confirmation email, even when including
   # devise confirmable module. If you want to use devise confirmable module and
   # send email, set it to true. (This is a setting for compatibility)
- config.send_confirmation_email = false
+ config.send_confirmation_email = true
 
  # By default this value is expected to be sent by the client so that the API 
  # knows where to redirect users after successful email confirmation. If this param is set, 
  # the API will redirect to this value when no value is provided by the client.
-config.default_confirm_success_url = Rails.env.production? ? 'https://auth-api-blog.herokuapp.com/login' : 'http://localhost:3000/login'
+config.default_confirm_success_url = Rails.env.production? ? 'https://eloquent-austin-a87d15.netlify.app/login' : 'http://localhost:3000/login'
 
 # By default this value is expected to be sent by the client so that the API knows 
 # where to redirect users after successful password resets. If this param is set, the 
 # API will redirect to this value when no value is provided by the client.
-config.default_password_reset_url = Rails.env.production? ?  'https://auth-api-blog.herokuapp.com/reset-password' : 'http://localhost:3000/reset-password'
+config.default_password_reset_url = Rails.env.production? ?  'https://eloquent-austin-a87d15.netlify.app/reset-password' : 'http://localhost:3000/reset-password'
 
 # By default, old tokens are not invalidated when password is changed. Enable this option 
 # if you want to make passwords updates to logout other devices.

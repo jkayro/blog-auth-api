@@ -21,3 +21,5 @@
 `$ cd rails-blog-api`
 
 `$ bundler install`
+
+.

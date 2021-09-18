@@ -1,9 +1,10 @@
 ## API de autenticação Rails com devise-token-auth
 
-|   Versões   |
-|-------------|
-| Ruby 2.7.4  |
-| Rails 6.1.4 |
+|    Versões    |
+|---------------|
+| Ruby 2.7.4    |
+| Rails 6.1.4   |
+| Postgresql 13 |
 
 ### Funcionalidade
 
@@ -21,5 +22,9 @@
 `$ cd rails-blog-api`
 
 `$ bundler install`
+
+`$ rails db:create`
+
+`$ rails db:migrate`
 
 .

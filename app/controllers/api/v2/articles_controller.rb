@@ -1,6 +1,6 @@
 class Api::V2::ArticlesController < ApplicationController
-  before_action :authenticate_api_user!, except: [:articles_all]
-  before_action :set_article, only: [:show, :update, :destroy]
+  before_action :authenticate_api_user!, except: [:articles_all, :show]
+  before_action :set_article, only: [:update, :destroy]
 
   # GET /articles
   def index
@@ -16,6 +16,7 @@ class Api::V2::ArticlesController < ApplicationController
 
   # GET /articles/1
   def show
+    @article = Article.find(params[:id])
     render json: @article
   end
 

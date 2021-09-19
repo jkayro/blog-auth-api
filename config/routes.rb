@@ -11,8 +11,9 @@ Rails.application.routes.draw do
     end
 
     scope module: :v2,
-          constraints: ApiConstraints.new(version: 2, default: true) do
-      resources :articles
+      constraints: ApiConstraints.new(version: 2, default: true) do
+        resources :articles
+        get '/articles-all', to: 'articles#articles_all'
     end
   end
 end
